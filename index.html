@@ -1,16 +1,21 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body{
 text-align:center;
+background-color: deepskyblue;
 }
 p {
   text-align: center;
   font-size: 60px;
   margin-top: 0px;
+  font-family: 'Luckiest Guy', cursive;
 }
 </style>
 </head>
@@ -37,24 +42,24 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
+    var sen = "Your Surprise Will be ready in..."
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = sen  + hours + " hrs "
+  + minutes + " mins " + seconds + " secs ";
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "HAPPY BIRTHDAY IYANA! <br> REFRESH & OPEN THE LINK NOW !";
+    document.getElementById("demo").innerHTML = "HAPPY BIRTHDAY IYANA ! <br> REFRESH & OPEN THE LINK NOW !";
   }
 }, 1000);
 
 function functionbday(){
     if(countDownDate-noww < 0){
-        alert("Happy Birthday !");
+        alert("Happy Birthday ! Get ready for the surprise babi !");
         window.location.href = "https://www.canva.com/design/DAEoSVdYBvw/AZy9EWFNRmdD_zUgiwlr1Q/view?website#2";
     }
-else{alert("wait for the countdown !");
+else{alert("I know you are excited for the surprise but wait for some more time babi !");
 }}
 /*function functionbday(){
 	if(hours<=00 || minutes<=00 || seconds<=00){
